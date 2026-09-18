@@ -2,11 +2,10 @@
 
 int main(void)
 {
-    int n, sum = 0;
+    int n;
+    int sum;
     printf("n : ");
     scanf("%i", &n);
     sum = ((n) * (n + 1)) / 2;
-    printf("Sum : %i\n", sum);
-
-
+    printf("Sum = %d\n", sum);
 }
