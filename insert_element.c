@@ -5,9 +5,11 @@ int main(void)
     int x = printf("What is x? ");
     scanf("%d", &x);
 
-    int array[x];
+    int y = x + 1;
 
-    for (int i = 0; i < x - 1; i++)
+    int array[y];
+
+    for (int i = 0; i < x; i++)
     {
         printf("What is array[%d] element? ", i);
         scanf("%d", &array[i]);
@@ -20,13 +22,13 @@ int main(void)
     scanf("%d", &element);
     
 
-    for (int i = x - 1; i > position - 2; i--)
+    for (int i = x ; i > position - 2; i--)
     {
         array[i + 1] = array[i]; 
     }
     array[position - 1] = element;
 
-    for (int i = 0; i < x; i++)
+    for (int i = 0; i < y; i++)
     {
         printf("%d ", array[i]);
     }
